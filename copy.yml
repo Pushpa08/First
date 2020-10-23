@@ -1,0 +1,9 @@
+---
+  - hosts:
+    
+    taks:
+      
+       - name: Copy a single file
+         ansible.windows.win_copy:
+           src: /home/pushpa/test2.txt
+           dest: D:\temp\renamed-test2.txt
