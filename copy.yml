@@ -1,9 +1,9 @@
 ---
-  - hosts: windows
+  - hosts: 192.168.43.30
     
-    taks:
+    tasks:
       
        - name: Copy a single file
-         ansible.windows.win_copy:
+         win_copy:
            src: /home/pushpa/test2.txt
            dest: D:\temp\renamed-test2.txt
