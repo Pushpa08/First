@@ -1,9 +1,7 @@
 ---
-  - hosts: 192.168.43.30
-    
+    hosts: windows
     tasks:
-      
-       - name: Copy a single file
-         win_copy:
+        - name: Copy a single file
+          win_copy:
            src: /home/pushpa/test2.txt
            dest: D:\temp\renamed-test2.txt
